@@ -36,13 +36,9 @@ class DataCleaning:
         print("Master DataFrame:")
         print(master_df)
 
+    #  exports the final master dataframe into one file called combined_data.csv.
+        master_df.to_csv('combined_data.csv', index=False)  # Set index=False to exclude row numbers in the CSV
+        print("Master DataFrame exported to 'combined_data.csv'.")
 
 
 
-from database_utils import DatabaseConnector 
-from database_utils import DataExtractor
-from database_utils import DataCleaning
-
-database_connector = DatabaseConnector()
-data_extractor = DataExtractor()
-data_cleaning = DataCleaning()
