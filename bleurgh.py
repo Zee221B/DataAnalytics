@@ -25,3 +25,48 @@ flights.py
 #master_df = data_extractor.retrieve_csv_data(database_connector, csv_path)
 
 
+DataCleaning
+
+
+
+#print(dfs)
+
+# Removes any columns that contain NULL or NA values in all of their records.
+
+#df2 = df2.dropna(axis=1, how='all')
+#df3 = df3.dropna(axis=1, how='all')
+#df4 = df4.dropna(axis=1, how='all')
+#df5 = df5.dropna(axis=1, how='all')
+#df6 = df6.dropna(axis=1, how='all')
+#df7 = df7.dropna(axis=1, how='all')
+#df8 = df8.dropna(axis=1, how='all')
+#df9 = df9.dropna(axis=1, how='all')
+
+# Replaces remaining null values with zero
+
+#df3 = df2.fillna(0)
+#df4 = df3.fillna(0)
+#df5 = df4.fillna(0)
+#df6 = df5.fillna(0)
+#df7 = df6.fillna(0)
+#df8 = df7.fillna(0)
+#df9 = df8.fillna(0)
+#df10 = df9.fillna(0)
+
+#converts my list into a dataframe
+# dfs_final = pd.DataFrame(dfs)
+
+# # Removes any columns that contain NULL or NA values in all of their records.
+# dfs_final= dfs.dropna(axis=1, how='all')
+
+# # Replaces remaining null values with zero
+# dfs_final = dfs.fillna(0)
+
+# dc = DataCleaning()
+# print(dc.clean_csv_data(dfs))
+
+# # exports the final master dataframe into one file called combined_data.csv.
+# dfs.to_csv('combined_data.csv', )  
+# # Set index=False to exclude row numbers in the CSV
+# 
+
