@@ -31,17 +31,22 @@ df9 = r'C:\Users\zbe17\Desktop\AiCore_Projects\DataAnalytics\FlightsCSV\1996.csv
 
 dfs = [df,df2,df3,df4,df5,df6,df7,df8,df9]
 
+#convert dfs list to a dataframe
+
+dfs_final = pd.DataFrame(dfs)
+
+
 # Removes any columns that contain NULL or NA values in all of their records.
-dfs = dfs.dropna(axis=1, how='all')
+dfs_final = dfs_final.dropna(axis=1, how='all')
 
 # Replaces remaining null values with zero
-dfs = dfs.fillna(0)
+dfs_final = dfs_final.fillna(0)
 
 dc = DataCleaning()
 #print(dc.clean_csv_data(dfs))
 
 # exports the final master dataframe into one file called combined_data.csv.
-dfs.to_csv('combined_data.csv', index=False)  # Set index=False to exclude row numbers in the CSV
+dfs_final.to_csv('combined_data.csv', index=False)  # Set index=False to exclude row numbers in the CSV
 print("Master DataFrame exported to 'combined_data.csv'.")
 
 
@@ -76,5 +81,5 @@ print("Master DataFrame exported to 'combined_data.csv'.")
 
 
      
-
+aws s3 cp combined_data.csv s3://myflightsbucket/combined_data.csv
 
