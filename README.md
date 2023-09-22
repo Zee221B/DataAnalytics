@@ -13,7 +13,7 @@
 6. [Section 5](#Creating Tableau Reports)
 7. [Section 6](#Installation Instructions)
 8. [Section 7](#Usage Instructions)
-9. [Section 8](# License Information)
+9. [Section 8](#License Information)
     
 ## Introduction
 

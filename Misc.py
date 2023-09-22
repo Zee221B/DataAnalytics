@@ -1,3 +1,8 @@
+#helpful tips 
+
+# a good idea to keep a record of all your completed queries in a .sql file in vscode though
+#that way you can upload them to your repo with the rest of your code
+
 # space for unused code
 
 
@@ -10,7 +15,7 @@ data_extractor = DataExtractor()
 data_cleaning = DataCleaning()
 
 
-flights.py 
+#flights.py 
 
 #from data_extraction import DataExtractor
 #from data_cleaning import DataCleaning
