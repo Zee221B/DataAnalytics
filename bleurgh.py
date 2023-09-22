@@ -1,4 +1,6 @@
-# space for unused cose
+# space for unused code
+
+
 from database_utils import DatabaseConnector 
 from database_utils import DataExtractor
 from database_utils import DataCleaning
@@ -25,7 +27,7 @@ flights.py
 #master_df = data_extractor.retrieve_csv_data(database_connector, csv_path)
 
 
-DataCleaning
+DataCleaning.py
 
 
 
@@ -68,5 +70,14 @@ DataCleaning
 # # exports the final master dataframe into one file called combined_data.csv.
 # dfs.to_csv('combined_data.csv', )  
 # # Set index=False to exclude row numbers in the CSV
-# 
 
+
+   # reads csv and creates a dataframe
+    # def clean_csv_data(self,df_list):
+    #     pd_list = []
+    #     for df in df_list: 
+    #         master_df = pd.read_csv(df)
+    #         pd_list.append(master_df)
+        
+    #     master_df = pd.concat(pd_list) 
+    #     return master_df

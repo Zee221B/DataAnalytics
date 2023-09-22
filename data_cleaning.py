@@ -15,21 +15,17 @@ class DataCleaning:
                    r"C:\Users\zbe17\Desktop\AiCore_Projects\DataAnalytics\FlightsCSV\1995.csv",
                    r"C:\Users\zbe17\Desktop\AiCore_Projects\DataAnalytics\FlightsCSV\1996.csv"] 
 
-    # reads csv and creates a dataframe
-    # def clean_csv_data(self,df_list):
-    #     pd_list = []
-    #     for df in df_list: 
-    #         master_df = pd.read_csv(df)
-    #         pd_list.append(master_df)
-        
-    #     master_df = pd.concat(pd_list) 
-    #     return master_df
+ 
     
    #returns a clean df
     def clean_df(self, df):
         df = df.dropna(axis=1, how='all')
         df.fillna(0,inplace=True)
-        #make all columns the same type in every dataframe
+        df['Distance'] = df['Distance'].astype(float)
+        df = df.assign(TailNum=None)
+        df = df.assign(AirTime=None)
+        df = df.assign(TaxiIn=None)
+        df = df.assign(TaxiOut=None)
         return df
     
     #takes a clean data frame puts it in a list
@@ -46,7 +42,7 @@ class DataCleaning:
 
     def export_df_to_csv(self):
          export_df = self.create_master_df()
-         export_df.to_csv("combined_data_csv",index=False)
+         export_df.to_csv("combined_data.csv",index=False)
          print("Master DataFrame exported to 'combined_data.csv'.")
 
 data_cleaning = DataCleaning()
