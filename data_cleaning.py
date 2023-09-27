@@ -19,13 +19,13 @@ class DataCleaning:
     
    #returns a clean df
     def clean_df(self, df):
-        df = df.dropna(axis=1, how='all')
+        #df = df.dropna(axis=1, how='all')
         df.fillna(0,inplace=True)
         df['Distance'] = df['Distance'].astype(float)
-        df = df.assign(TailNum=None)
-        df = df.assign(AirTime=None)
-        df = df.assign(TaxiIn=None)
-        df = df.assign(TaxiOut=None)
+        #df = df.assign(TailNum=None)
+        #df = df.assign(AirTime=None)
+        #df = df.assign(TaxiIn=None)
+        #df = df.assign(TaxiOut=None)
         return df
     
     #takes a clean data frame puts it in a list
@@ -42,8 +42,8 @@ class DataCleaning:
 
     def export_df_to_csv(self):
          export_df = self.create_master_df()
-         export_df.to_csv("combined_data.csv",index=False)
-         print("Master DataFrame exported to 'combined_data.csv'.")
+         export_df.to_csv("combined_data2.csv",index=False)
+         print("Master DataFrame exported to 'combined_data2c.csv'.")
 
 data_cleaning = DataCleaning()
 data_cleaning.export_df_to_csv()
