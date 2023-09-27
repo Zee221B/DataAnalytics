@@ -1,5 +1,6 @@
 #helpful tips 
 
+# ctrl / to hash and unhash multiple lines 
 # a good idea to keep a record of all your completed queries in a .sql file in vscode though
 #that way you can upload them to your repo with the rest of your code
 

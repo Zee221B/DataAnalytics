@@ -42,8 +42,8 @@ class DataCleaning:
 
     def export_df_to_csv(self):
          export_df = self.create_master_df()
-         export_df.to_csv("combined_data2.csv",index=False)
-         print("Master DataFrame exported to 'combined_data2c.csv'.")
+         export_df.to_csv("combined_data.csv",index=False)
+         print("Master DataFrame exported to 'combined_data.csv'.")
 
 data_cleaning = DataCleaning()
 data_cleaning.export_df_to_csv()
