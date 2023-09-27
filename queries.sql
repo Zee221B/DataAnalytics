@@ -58,10 +58,24 @@ FROM flights;
 Yes!
 
 4. Which year had the most number of total inbound and outbound flights? 
+SELECT year,
+       SUM(arrtime) AS total_inbound_flights,
+       SUM(deptime) AS total_outbound_flights
+FROM flights
+GROUP BY year
+LIMIT 1;
 
-
+1987
 
 
 5.Which country is the most popular destination for flights?
 
+SELECT dest,
+       SUM(flightnum) AS total_outbound_flights
+FROM flights
+GROUP BY dest
+ORDER BY total_outbound_flights DESC
+LIMIT 1;
+
+PIT 
 
