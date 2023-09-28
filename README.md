@@ -51,9 +51,9 @@ How many total records does the table contain? Does it have the same number of r
 
 Which year had the most number of total inbound and outbound flights? Which country is the most popular destination for flights?
 
-## Integrating Tableau Desktop with PostgreSQL RDS)
-In this milestone, I downloaded and installed a 14 day free trial of Tableau Desktop before configuring the PostgreSQL connector and connecting it to my flights_analytics_database RDS. The settings for this are the same as the ones Iused earlier to connect pgAdmin4 to PostgreSQL (same endpoint, username and password).
+## Integrating Tableau Desktop with PostgreSQL RDS
 
+In this milestone, I downloaded and installed a 14 day free trial of Tableau Desktop before configuring the PostgreSQL connector and connecting it to my flights_analytics_database RDS. The settings for this are the same as the ones Iused earlier to connect pgAdmin4 to PostgreSQL (same endpoint, username and password).
 
 
 ## Creating Tableau Reports
