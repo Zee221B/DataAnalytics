@@ -42,6 +42,15 @@ I made sure all dataframes had the same number of columns, and that each of the 
 ### Exporting the data to a combined_data.csv file
 Using Pandas, I exported the final master dataframe into one file called combined_data.csv. I ensured that the file contains header titles for each column. Using the command line interface, I copied the file to my S3 bucket using the aws s3 cp command. I finally downloaded a copy from AWS S3 to my local machine.
 
+## Integrating Tableau Desktop with PostgreSQL RDS
+
+With my combined_data.csv ready, I could now connect pgAdmin to the PostgreSQL RDS database in the AWS console. In pgAdmin I created a new server called production_server and connected that to the PostgreSQL RDS database using the endpoint. Within the server I created a database called flights_analytics_database and within that database, a table called flights. This table has the same number of columns and the same column types as those in the combined_data.csv file, but I added an extra column called id as the primary key. I could then import the combined_data.csv file into the database. In the properties window that pops-up, made sure to select Import, csv as the format, (,) as the delimiter, and enabled Header. On the Columns tab at the top of the menu I removed the id column from the list of columns to import (otherwise I would get an error).
+
+I could now calculate some statistics: 
+How many total records does the table contain? Does it have the same number of records as those in the combined_data.csv file?
+
+Which year had the most number of total inbound and outbound flights? Which country is the most popular destination for flights?
+
 
 ## Installation instructions
 
