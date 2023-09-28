@@ -52,6 +52,8 @@ How many total records does the table contain? Does it have the same number of r
 Which year had the most number of total inbound and outbound flights? Which country is the most popular destination for flights?
 
 
+## Creating Tableau Reports
+
 ## Installation instructions
 
 To carry out section 2 of this project, you will need to have an AWS account, and VSCode installed on your machine. In VSCode you will need panda packages installed.
