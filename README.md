@@ -58,6 +58,14 @@ In this milestone, I downloaded and installed a 14 day free trial of Tableau Des
 
 ## Creating Tableau Reports
 
+For the final milestone, it was time to create a variety of Tableau Reports before exporting to Github. I created Tableau Reports that displays the historical data for the highest flight destinations, the average distance that airplanes travel for all flights (the overall average) for each carrier, the top most used flight numbers, and a treemap showing:
+
+Which airport has the highest overall arrival delay for all flights for all years?
+
+Which airport has the overall highest average departure delay for all flights for all years?
+
+Which airport has the highest number of cancelled flights for all years?
+
 ## Installation instructions
 
 To carry out section 2 of this project, you will need to have an AWS account, and VSCode installed on your machine. In VSCode you will need panda packages installed.
