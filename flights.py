@@ -14,11 +14,7 @@ csv_list = [r"C:\Users\zbe17\Desktop\AiCore_Projects\DataAnalytics\FlightsCSV\19
             r"C:\Users\zbe17\Desktop\AiCore_Projects\DataAnalytics\FlightsCSV\1995.csv",
             r"C:\Users\zbe17\Desktop\AiCore_Projects\DataAnalytics\FlightsCSV\1996.csv"] 
 
-
-
-#returns a clean df
 def clean_df(df):
-#df = df.dropna(axis=1, how='all')
     df.fillna(0,inplace=True)
     df['Distance'] = df['Distance'].astype('float32')
     df ['Year'] = df['Year'].astype('int32')
@@ -43,14 +39,8 @@ def clean_df(df):
     df ['TaxiOut'] = df['TaxiOut'].astype('int32')
     df ['Cancelled'] = df['Cancelled'].astype('int32')
     df ['Diverted'] = df['Diverted'].astype('int32')
-
-#df = df.assign(TailNum=None)
-#df = df.assign(AirTime=None)
-#df = df.assign(TaxiIn=None)
-#df = df.assign(TaxiOut=None)
     return df
 
-#takes a clean data frame puts it in a list
 def create_and_clean_df():
     clean_df_list = []
     for csv_path in csv_list:
@@ -60,7 +50,6 @@ def create_and_clean_df():
 
 def create_master_df():
     master_df = pd.concat(create_and_clean_df()) 
-    #master_df = master_df.sample(frac=0.1, replace=True, random_state=1)
     return master_df
 
 def export_df_to_csv():
@@ -74,10 +63,3 @@ export_df_to_csv()
 
 
 
-
-
-
-
-
-#copies combined data csv to your S3 bucket
-#aws s3 cp combined_data.csv s3://myflightsbucket/combined_data.csv
