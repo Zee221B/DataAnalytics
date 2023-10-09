@@ -37,6 +37,10 @@ Using Pandas, I printed the number of records that contain NULL values in any of
 
 ![Alt text](image-1.png)
 
+The data in the csv files were flight data, from the year 1987 to 1996, with each year having its own csv file. These are some of the columns within the dataset:
+
+![Alt text](image-4.png)
+
 ### Data integration
 
 Using Pandas, I integrated all of the dataframes together into one master dataframe.
