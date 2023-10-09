@@ -15,3 +15,4 @@ Misc.py
 flights2.py
 flights_private.py
 data_extraction.py
+__pycache__
