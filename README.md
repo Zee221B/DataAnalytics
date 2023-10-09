@@ -27,20 +27,27 @@ In this project, I use GitHub to track changes to my code and save them online i
 
 ### Loading the CSV data files in to Pandas dataframes
 
-In this step, I prepare the flight data for analysis by exploring, creating and integrating the various data files and creatign a final, integrated master file. First, I download the CSV data files. Next, I opened Visual Studio Code, created a new flights.py file and used Pandas to load all the USA flights data files. I turned each CSV file into a separate dataframe (so that one dataframe corresponds to one year's data). Finally I needed to check that the data was imported successfully.
+In this step, I prepare the flight data for analysis by exploring, creating and integrating the various data files and creatign a final, integrated master file. First, I downloaded the CSV data files. Next, I opened Visual Studio Code, created a new flights.py file and used Pandas to load all the USA flights data files. I turned each CSV file into a separate dataframe (so that one dataframe corresponds to one year's data). Finally I needed to check that the data was imported successfully.
+
+![Alt text](image.png)
 
 ### Data cleaning
 
-Using Pandas, I printed the number of records that contain NULL values in any of their columns using Panda's isnull() and isna() functions. Then, I removed any columns that contain NULL or NA values in all of their records. Finally, for any records that still contained NULL or NA fields, I replaced them with zeros. I also checked the data types of everry column and made sure that they had the same format. For example, I converted all of the "Distance" column data to float64 data types. 
+Using Pandas, I printed the number of records that contain NULL values in any of their columns using Panda's isnull() and isna() functions. Then, I removed any columns that contain NULL or NA values in all of their records. Finally, for any records that still contained NULL or NA fields, I replaced them with zeros. I also checked the data types of every column and made sure that they had the same format. For example, I converted all of the "Distance" column data to float64 data types. 
 
+![Alt text](image-1.png)
 
 ### Data integration
 
 Using Pandas, I integrated all of the dataframes together into one master dataframe.
 I made sure all dataframes had the same number of columns, and that each of the column types were the same.
 
+![Alt text](image-2.png)
+
 ### Exporting the data to a combined_data.csv file
 Using Pandas, I exported the final master dataframe into one file called combined_data.csv. I ensured that the file contains header titles for each column. Using the command line interface, I copied the file to my S3 bucket using the aws s3 cp command. I finally downloaded a copy from AWS S3 to my local machine.
+
+![Alt text](image-3.png)
 
 ## Integrating Tableau Desktop with PostgreSQL RDS
 

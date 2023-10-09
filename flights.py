@@ -1,5 +1,6 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
+
 
 
     
@@ -46,6 +47,7 @@ def create_and_clean_df():
     for csv_path in csv_list:
         df = pd.read_csv(csv_path, nrows=30000)
         clean_df_list.append(clean_df(df))
+        
     return clean_df_list
 
 def create_master_df():
