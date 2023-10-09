@@ -3,23 +3,23 @@
 # Table of Contents
 1. [Introduction](#introduction)
 2. [Setting up the environment](#Setting-up-the-environment)
-3. [Section 2](#Data-wrangling-and-cleaning)
-    - [Subsection 2.1](#Loading the CSV data files in to Pandas dataframes)
-    - [Subsection 2.2](#Data Cleaning)
-    - [Subsection 2.3](#Data integration)
-    - [Subsection 2.4](#Exporting the data to a combined_data.csv file)
-4. [Section 3](#PostgreSQL RDS data import and reporting)
-5. [Section 4](#Integrating Tableau Desktop with PostgreSQL RDS)
-6. [Section 5](#Creating Tableau Reports)
-7. [Section 6](#Installation Instructions)
-8. [Section 7](#Usage Instructions)
-9. [Section 8](#License Information)
+3. [Data Wrangling and cleaning](#Data-wrangling-and-cleaning)
+    - [Loading the CSV data files in to Pandas dataframes](#Loading-the-CSV-data-files-in-to-Pandas-dataframes)
+    - [Data Cleaning](#Data-Cleaning)
+    - [Data Integration](#Data-integration)
+    - [Exporting the data to a combined_data.csv file](#Exporting-the-data-to-a-combined-data-csv-file)
+4. [PostgreSQL RDS data import and reporting](#PostgreSQL-RDS-data-import-and-reporting)
+5. [Integrating Tableau Desktop with PostgreSQL RDS](#Integrating-Tableau-Desktop-with-PostgreSQL-RDS)
+6. [Creating Tableau Reports](#Creating-Tableau-Reports)
+7. [Installation Instructions](#Installation-Instructions)
+8. [Usage Instructions](#Usage-Instructions)
+9. [License Information](#License-Information)
     
-## Introduction  <a name="introduction"></a>
+## Introduction 
 
 This project was built to improve my skills as a data analyst regarding the key aspects of data cleaning, integration and reporting. In this scenario, I am a data analyst working for Skyscanner and my goal is to migrate existing data analytics tasks from an Excel-based manual system into interactive Tableau reports. This allows for the large datasets to explored, and statistical questions answered in a format that can be understood easier by both data analysts and other employees of the company. 
 
-## Setting up the environment <a name="Setting-up-the-environment"></a>
+## Setting up the environment 
 
 In this project, I use GitHub to track changes to my code and save them online in a GitHub repo. I also have some services running in the cloud, so I set up an AWS account and created an RDS instance and S3 bucket export my csv files.
 
