@@ -2,8 +2,8 @@
 
 # Table of Contents
 1. [Introduction](#introduction)
-2. [Section 1](#Setting up the environment)
-3. [Section 2](#Data wrangling and cleaning)
+2. [Section 1](#Setting-up-the-environment)
+3. [Section 2](#Data-wrangling-and-cleaning)
     - [Subsection 2.1](#Loading the CSV data files in to Pandas dataframes)
     - [Subsection 2.2](#Data Cleaning)
     - [Subsection 2.3](#Data integration)
