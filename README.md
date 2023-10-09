@@ -19,7 +19,7 @@
 
 This project was built to improve my skills as a data analyst regarding the key aspects of data cleaning, integration and reporting. In this scenario, I am a data analyst working for Skyscanner and my goal is to migrate existing data analytics tasks from an Excel-based manual system into interactive Tableau reports. This allows for the large datasets to explored, and statistical questions answered in a format that can be understood easier by both data analysts and other employees of the company. 
 
-## Setting up the environment
+## Setting up the environment <a name="Setting up the environment"></a>
 
 In this project, I use GitHub to track changes to my code and save them online in a GitHub repo. I also have some services running in the cloud, so I set up an AWS account and created an RDS instance and S3 bucket export my csv files.
 
