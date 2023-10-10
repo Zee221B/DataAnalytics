@@ -16,3 +16,4 @@ flights2.py
 flights_private.py
 data_extraction.py
 __pycache__
+*.png
