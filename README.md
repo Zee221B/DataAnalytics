@@ -71,11 +71,29 @@ In this milestone, I downloaded and installed a 14 day free trial of Tableau Des
 
 For the final milestone, it was time to create a variety of Tableau Reports before exporting to Github. I created Tableau Reports that displays the historical data for the highest flight destinations, the average distance that airplanes travel for all flights (the overall average) for each carrier, the top most used flight numbers, and a treemap showing:
 
+Historical data for the highest flight destinations
+
+![Alt text](image-5.png)
+
+Average distance that airplanes travel for all flights (the overall average) for each carrier
+
+![Alt text](image-6.png)
+
+Top most used flight numbers
+
+![Alt text](image-8.png)
+
 Which airport has the highest overall arrival delay for all flights for all years?
+
+![Alt text](image-7.png)
 
 Which airport has the overall highest average departure delay for all flights for all years?
 
+![Alt text](image-9.png)
+
 Which airport has the highest number of cancelled flights for all years?
+
+![Alt text](image-10.png)
 
 ## Installation instructions
 
