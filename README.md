@@ -77,11 +77,11 @@ Historical data for the highest flight destinations
 
 Average distance that airplanes travel for all flights (the overall average) for each carrier
 
-![Alt text](image-6.png)
+![Alt text](image-14.png)
 
 Top most used flight numbers
 
-![Alt text](image-8.png)
+![Alt text](image-15.png)
 
 Which airport has the highest overall arrival delay for all flights for all years?
 
@@ -89,11 +89,11 @@ Which airport has the highest overall arrival delay for all flights for all year
 
 Which airport has the overall highest average departure delay for all flights for all years?
 
-![Alt text](image-9.png)
+![Alt text](image-13.png)
 
 Which airport has the highest number of cancelled flights for all years?
 
-![Alt text](image-10.png)
+![Alt text](image-12.png)
 
 ## Installation instructions
 
