@@ -1,4 +1,4 @@
-# DataAnalytics Migration to Tableau
+# Data Analytics Migration to Tableau
 
 # Table of Contents
 1. [Introduction](#introduction)
